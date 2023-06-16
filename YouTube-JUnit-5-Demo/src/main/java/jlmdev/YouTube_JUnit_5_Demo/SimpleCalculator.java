@@ -4,10 +4,9 @@ package jlmdev.YouTube_JUnit_5_Demo;
  * Hello world!
  *
  */
-public class App 
+public class SimpleCalculator 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public int add (int numberA, int numberB) {
+    	return numberA + numberB;
     }
 }

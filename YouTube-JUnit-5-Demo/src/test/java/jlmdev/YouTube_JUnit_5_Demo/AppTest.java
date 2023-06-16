@@ -1,5 +1,6 @@
 package jlmdev.YouTube_JUnit_5_Demo;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -13,8 +14,10 @@ public class AppTest
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
+    public void addTwoPlusTwoEqualsFour()
     {
-        assertTrue( true );
+    	SimpleCalculator calculator = new SimpleCalculator();
+        calculator.add(2, 2);
+        assertEquals(4, calculator.add(2, 2));
     }
 }
